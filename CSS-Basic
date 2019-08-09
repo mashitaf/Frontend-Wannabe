@@ -1,0 +1,57 @@
+#1. Change the Color of Text
+We can do this by changing the style of your h2 element.
+The property that is responsible for the color of an element's text is the color style property.
+<h2 style="color: red;">CatPhotoApp</h2>
+
+#2. Use CSS Selectors to Style Elements
+<style>
+  h2 {color: blue;}
+</style>
+
+#3. Use a CSS Class to Style an Element
+Classes are reusable styles that can be added to HTML elements.
+<style>
+  .red-text {color: red;}
+</style>
+<h2 class="red-text">CatPhotoApp</h2>
+
+#4. Change the Font Size and Font Family of an Element
+<style>
+  .red-text {color: red;}
+  .p {font-size: 16px; font-family: monospace;}
+</style>
+
+#5. Import font from Google Font
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {color: red;}
+  h2 { font-family: Lobster;}
+  p {
+    font-size: 16px;
+    font-family: monospace;  }
+</style>
+
+#6. Bigger/Smaller image
+<style> 
+.smaller-image { width: 100px;} </style>
+
+<a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back." class="smaller-image"></a>
+
+#7. Add Borders Around Your Elements
+<style> 
+.thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+</style>
+p.s: border-radius: 50% will make the border circle
+
+#8. Give a Background Color to a div Element
+<style>
+.silver-background { 
+    background-color: silver;}
+</style>
+
+
