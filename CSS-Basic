@@ -127,5 +127,38 @@ If you set an element's margin to a negative value, the element will grow larger
   #17. Use Hex Code for Specific Colors
   In CSS, we can use 6 hexadecimal digits to represent colors, two each for the red (R), green (G), and blue (B) components. For example, #000000 is black and is also the lowest possible value. You can find more information about the RGB color system here.
   
+  #18. Create a custom CSS Variable
+  To create a CSS Variable, you just need to give it a name with two dashes in front of it and assign it a value like this:
+  --penguin-skin: gray;
   
+  After you create your variable, you can assign its value to other CSS properties by referencing the name you gave it.
+  background: var(--penguin-skin); <!-- remember to use Var instead of other color -->
+  
+  #19. Attach a Fallback value to a CSS Variable
+  When using your variable as a CSS property value, you can attach a fallback value that your browser will revert to if the given variable is invalid.
+  
+  background: var(--penguin-skin, black); <!-- This will set background to black if your variable wasn't set -->
+  
+  #20. Cascading CSS variables
+  When you create a variable, it becomes available for you to use inside the element in which you create it. It also becomes available within any elements nested within it. This effect is known as cascading.
+  Because of cascading, CSS variables are often defined in the :root element.
+  You can think of the :root element as a container for your entire HTML document, in the same way that an html element is a container for the body element.
+  By creating your variables in :root, they will be available throughout the whole web page.
+  :root {
+     --penguin-belly: pink;}
+     
+  You can then over-write these variables by setting them again within a specific element.
+  :root {
+     --penguin-belly: pink;}
+  .penguin {
+    --penguin-belly: white;} <!-- white color will cover the belly, instead of pink -->
+    
+  #21. Use a media query to change a variable
+  CSS Variables can simplify the way you use media queries.
+  For instance, when your screen is smaller or larger than your media query break point, you can change the value of a variable, and it will apply its style wherever it is used.
+  @media (max-width: 350px) {
+    :root {
+      --penguin-size: 200px;
+      --penguin-skin: black;  } }
+      
   
