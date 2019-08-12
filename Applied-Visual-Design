@@ -1,0 +1,20 @@
+Visual Design in web development is a broad topic. It combines typography, color theory, graphics, animation, and page layout to help deliver a site's message. The definition of good design is a well-discussed subject, with many books on the theme.
+At a basic level, most web content provides a user with information. The visual design of the page can influence its presentation and a user's experience. In web development, HTML gives structure and semantics to a page's content, and CSS controls the layout and appearance of it.
+
+#1. Create Visual Balance Using the text-align Property
+Text is often a large part of web content. CSS has several options for how to align it with the text-align property.
+<style>
+  h4 {text-align: center; } <\style>
+
+#2. Adjust the Width / Height of an Element
+You can specify the width of an element using the width property in CSS. Values can be given in relative length units (such as em), absolute length units (such as px), or as a percentage of its containing parent element. 
+img {width: 220px;}
+img {height: 245px;}
+
+#3. Use the <strong> Tag to Make Text Bold, <u> tag to make Underline, <em> to Make Italic Text, <s> to Strikethrough Text
+To make text bold, you can use the strong tag. This is often used to draw attention to text and symbolize that it is important. With the strong tag, the browser applies the CSS of font-weight: bold; to the element.
+ <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at <strong>Stanford University</strong>.</p> <!-- Stanford Univ become bold -->
+ <u>Ph.D. students</u>
+ 
+#4. Create a Horizontal Line Using the hr Element
+In HTML, hr is a self-closing tag, and therefore doesn't need a separate closing tag.
