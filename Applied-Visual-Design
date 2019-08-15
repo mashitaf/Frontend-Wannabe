@@ -16,5 +16,60 @@ To make text bold, you can use the strong tag. This is often used to draw attent
  <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at <strong>Stanford University</strong>.</p> <!-- Stanford Univ become bold -->
  <u>Ph.D. students</u>
  
-#4. Create a Horizontal Line Using the hr Element
+#4. Create a Horizontal Line Using the <hr> Element
 In HTML, hr is a self-closing tag, and therefore doesn't need a separate closing tag.
+
+#5. Adjust the background-color Property of Text
+Instead of adjusting your overall background or the color of the text to make the foreground easily readable, you can add a background-color to the element holding the text you want to emphasize.
+rgba stands for:
+  r = red
+  g = green
+  b = blue
+  a = alpha/level of opacity
+<style>  
+background-color: rgba(45, 45, 45, 0.1); </style>
+
+#6. Adjust the Size of a Header Versus a Paragraph Tag
+The font size of header tags (h1 through h6) should generally be larger than the font size of paragraph tags. This makes it easier for the user to visually understand the layout and level of importance of everything on the page. You use the font-size property to adjust the size of the text in an element.
+<style>
+text-size: 20px; </style>
+
+#7. Add a box-shadow to a Card-like Element
+The box-shadow property takes values for offset-x (how far to push the shadow horizontally from the element), offset-y (how far to push the shadow vertically from the element), blur-radius, spread-radius and a color value, in that order. The blur-radius and spread-radius values are optional.
+
+#thumbnail {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+#8. Decrease the Opacity of an Element
+The opacity property in CSS is used to adjust the opacity, or conversely, the transparency for an item.
+A value of 1 is opaque, which isn't transparent at all; A value of 0.5 is half see-through; A value of 0 is completely transparent.
+  .links {
+    text-align: left;
+    color: black;
+    opacity: 0.7;
+ 
+#9. Use the text-transform Property to Make Text Uppercase
+The text-transform property in CSS is used to change the appearance of text. It's a convenient way to make sure text on a webpage appears consistently, without having to change the text content of the actual HTML elements.
+
+text-transform: uppercase;
+
+#10. Set the font-weight/size for Heading Elements
+The font-weight property sets how thick or thin characters are in a section of text.
+<p>
+font-size: 16px;
+font-weight: 200;
+</p>
+
+#11. Set the line-height of Paragraphs
+CSS offers the line-height property to change the height of each line in a block of text. As the name suggests, it changes the amount of vertical space that each line of text gets.
+<p>
+line-height: 25px; </p>
+
+#12. Adjust the Hover State of an Anchor Tag
+A pseudo-class is a keyword that can be added to selectors, in order to select a specific state of the element.
+For example, the styling of an anchor tag can be changed for its hover state using the :hover pseudo-class selector. Here's the CSS to change the color of the anchor tag to red during its hover state:
+
+a:hover { color: blue;}
+
+#13. Change an Element's Relative Position
